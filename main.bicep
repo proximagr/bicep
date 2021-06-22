@@ -85,8 +85,8 @@ module vnet 'modules/vnet.bicep' = {
   }
 }
 
-module vm2019 'modules/vm.bicep' = {
-  name: 'vm2019'
+module vm 'modules/vm.bicep' = {
+  name: 'vm'
   params: {
     adminPassword: adminPassword
     adminUserName: adminUserName
