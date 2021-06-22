@@ -3,7 +3,7 @@ param appServiceAppName string = 'papp${uniqueString(resourceGroup().id)}'
 param environmentType string
 
 var appServicePlanName = 'proxgrbiceptasp'
-var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2v3' : 'F1'
 var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
 
 resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
